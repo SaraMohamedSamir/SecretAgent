@@ -1,0 +1,253 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+header,
+.logo,
+.main-banner .head-lines,
+.product span,
+.location,
+.opening-hours,
+footer,
+.footer {
+  background-color: Black;
+}
+
+.logo,
+.links-container,
+.products-grid,
+.product-img,
+.contact {
+  display: flex;
+  align-items: center;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.logo,
+.main-banner .head-lines,
+.links-container,
+.product span,
+.location,
+.opening-hours,
+.footer p,
+.mobile-nav {
+  color: White;
+}
+
+.products-grid,
+.links-container,
+.contact {
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+}
+
+.logo span {
+  font-size: 1rem;
+  padding-top: 0.66rem;
+  padding-bottom: 0.66rem;
+}
+
+.main-banner {
+  background-image: url("../images/moto.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.main-banner .head-lines {
+  width: 20rem;
+  position: relative;
+  top: 9rem;
+  padding: 2rem 3rem;
+}
+
+.head-lines h1, .head-lines h4 {
+  font-weight: bold;
+}
+
+.head-lines h4 {
+  font-size: 1rem;
+}
+
+.head-lines h1 {
+  font-size: 2rem;
+  margin: 0.25em 0;
+  line-height: 1.2em;
+}
+
+.navigation {
+  background-color: Firebrick;
+}
+
+.links-container {
+  padding: 0.75em 0;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.product {
+  width: 30%;
+  border: 4px solid Black;
+  margin-top: 3rem;
+}
+
+.product-img {
+  height: 9rem;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.product-img img {
+  max-width: 8rem;
+}
+
+.product span {
+  display: block;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.contact {
+  padding-top: 3rem;
+}
+
+.locations, .hours  {
+  width: 35%;
+  margin-bottom: 4rem;
+}
+
+.location, .opening-hours {
+  padding: 1rem 2rem;
+  margin-bottom: 4px;
+}
+
+.footer {
+  height: 5rem;
+}
+
+.footer p {
+  padding-top: 4rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .links-container {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75em 0;
+  }
+
+  .product {
+    width: 30%;
+  }
+
+  .product-img {
+    height: 7rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .product-img {
+    height: 6rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .product-img {
+    height: 5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .products-grid {
+    flex-direction: column;
+  }
+  .product {
+    width: 90%;
+  }
+  .product-img {
+    height: 9rem;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .locations, .hours  {
+    width: 90%;
+    margin-bottom: 1.5rem;
+  }
+
+  .main-banner {
+    height: 20rem;
+  }
+
+  .main-banner .head-lines {
+    width: 100%;
+    top: 15rem;
+    padding: 1rem 0;
+  }
+
+  .head-lines h4 {
+    font-size: 0.77rem;
+    padding: 0 0.5rem;
+  }
+
+  .head-lines h1 {
+    font-size: 1rem;
+    padding: 0 0.5rem;
+    margin: 0;
+  }
+
+  .footer p {
+    text-align: center;
+    padding-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .logo img {
+    height: 2rem;
+    margin: auto;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .main-banner {
+    height: 15rem;
+  }
+
+  .main-banner .head-lines {
+    width: 100%;
+    top: 12rem;
+    padding: 0.5rem 0;
+  }
+
+  .head-lines h4 {
+    font-size: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .head-lines h1 {
+    font-size: 0.8rem;
+    padding: 0 0.5rem;
+  }
+}
